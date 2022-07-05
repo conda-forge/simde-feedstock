@@ -2,7 +2,7 @@ mkdir build
 cd build
 
 ::Configure
-meson --prefix=%LIBRARY_PREFIX% --buildtype=release -Dtests=false %SRC_DIR% 
+meson %MESON_ARGS% --prefix=%LIBRARY_PREFIX% --buildtype=release -Dtests=false %SRC_DIR%
 if errorlevel 1 exit 1
 
 :: Install.
