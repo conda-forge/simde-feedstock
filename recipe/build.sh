@@ -2,5 +2,5 @@
 
 mkdir build && cd build
 
-meson --prefix=$PREFIX --libdir=$PREFIX/lib --buildtype=release -Dtests=false ..
+meson ${MESON_ARGS} --prefix=$PREFIX --libdir=$PREFIX/lib --buildtype=release -Dtests=false ..
 ninja install
