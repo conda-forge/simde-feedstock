@@ -1,11 +1,11 @@
-About simde
-===========
+About simde-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/simde-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/simd-everywhere/simde.git
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/simde-feedstock/blob/main/LICENSE.txt)
 
 Summary: Implementations of SIMD instruction sets for systems which don't natively support them.
 
