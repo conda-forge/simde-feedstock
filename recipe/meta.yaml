@@ -1,5 +1,5 @@
 {% set name = "simde" %}
-{% set version = "0.7.2" %}
+{% set version = "0.7.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/simd-everywhere/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 366d5e9a342c30f1e40d1234656fb49af5ee35590aaf53b3c79b2afb906ed4c8
+  sha256: d5ae61b045cc8fd0ae84cbc70289721b0c0a4c9c5d7fe296bcb7673b0ea595e8
 
 build:
-  number: 1
+  number: 0
   ignore_run_exports_from:
     # Since this package does not ship any compiled code, we do not need any
     # compatibility with the compiler used at runtime.
