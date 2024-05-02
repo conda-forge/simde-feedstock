@@ -1,5 +1,5 @@
 {% set name = "simde" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/simd-everywhere/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: d7c1aef6dd9ef0fbe6f521d1ca3e79afc26deda7d8f857544ca020b42a4b9b97
+  sha256: ed2a3268658f2f2a9b5367628a85ccd4cf9516460ed8604eed369653d49b25fb
 
 build:
   number: 0
@@ -19,6 +19,7 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - ninja
     - meson
   host:
