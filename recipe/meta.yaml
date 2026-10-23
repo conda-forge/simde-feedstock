@@ -10,7 +10,7 @@ source:
   sha256: ed2a3268658f2f2a9b5367628a85ccd4cf9516460ed8604eed369653d49b25fb
 
 build:
-  number: 0
+  number: 1
   ignore_run_exports_from:
     # Since this package does not ship any compiled code, we do not need any
     # compatibility with the compiler used at runtime.
